@@ -53,9 +53,9 @@
                                         <a class="small" href="{{ route('password.request') }}">Forgot Password?</a>
                                     </div>
                                 @endif
-                                <div class="text-center">
+                                {{--<div class="text-center">
                                     <a class="small" href="{{url('/sign-up')}}">Don't have an account? Register Now!</a>
-                                </div>
+                                </div>--}}
                             </div>
                         </div>
                     </div>
