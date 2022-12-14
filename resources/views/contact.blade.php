@@ -57,7 +57,7 @@
             <p>Contact Us</p>
             <h3>We are here to help you!</h3>
         </div><!-- /.block-title -->
-        <form action="{{ assets('inc/sendemail.php') }}" class="contact-one__form contact-form-validated">
+        <form action="{{ asset('inc/sendemail.php') }}" class="contact-one__form contact-form-validated">
             <div class="row">
                 <div class="col-md-6">
                     <input type="text" placeholder="Full Name" name="name">
