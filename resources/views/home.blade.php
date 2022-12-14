@@ -49,13 +49,13 @@
                     </div><!-- /.logo-box -->
                     <div class="main-nav__main-navigation">
                         <ul class="main-nav__navigation-box">
-                            <li><a href="index.html">Home</a> </li>
+                            <li><a href="/index.html">Home</a> </li>
                           
-                            <li> <a href="services.html">Services</a> </li>
+                            <li> <a href="/services.html">Services</a> </li>
 
                             <li><a href="{{ route('home') }}">Reviews</a></li>
 
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
                         </ul><!-- /.main-nav__navigation-box -->
                     </div><!-- /.main-nav__main-navigation -->
                     <div class="main-nav__right">
