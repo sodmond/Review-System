@@ -77,7 +77,7 @@
             <div class="container">
                 <h2>Customer Reviews</h2>
                 <ul class="list-unstyled thm-breadcrumb">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://yetedaservices.com/">Home</a></li>
                     <li><span>Reviews</span></li>
                 </ul><!-- /.list-unstyled -->
             </div>
