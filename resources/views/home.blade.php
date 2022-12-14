@@ -1,230 +1,437 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+@extends('layouts.app', ['title' => 'Home', 'activePage' => 'home'])
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews || Yeteda Services</title>
+@section('content')
+<section class="slider-two__wrapper">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-lg-5 d-flex">
+                <div class="my-auto">
+                    <div class="slider-two__main">
+                        <h3>You're in good hands with our professional team.</h3>
+                        <p>We provide peace of mind when caring for you and your loved one. If you or a loved one needs a little help at your home with elderly care, personal care etc. turn to us. We offer innovative services by highly trained caregivers you can trust for personal care needs, post-op needs, and seniors who wish to remain in the comfort of their own homes.</p>
+                        <a href="services.html" class="thm-btn slider-two__btn">View Services</a>
+                        <!-- /.thm-btn slider-two__btn -->
+                        <ul id="slider-two__carousel-dots" class="list-unstyled owl-dots">
+                            <li class="owl-dot"></li>
+                            <li class="owl-dot"></li>
+                            <li class="owl-dot"></li>
+                        </ul>
+                    </div><!-- /.slider-two__main -->
+                </div><!-- /.my-auto -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-7 d-flex justify-content-end">
+                <div class="slider-two__carousel owl-carousel thm__owl-carousel owl-theme"
+                    data-carousel-dots-container="#slider-two__carousel-dots" data-options='{
+                    "items": 1, "loop": true, "autoplay": true, "autoplayTimeout": 5000, "autoplayHoverPause": true, "margin": 0, "smartSpeed": 1000, "dotsContainer": &quot;#slider-two__carousel-dots&quot;
+                }'>
+                    <div class="item">
+                        <div class="slider-two__carousel-single">
+                            <img src="{{ asset('images/main-slider/main-slider-2-1.jpg') }}" alt="">
+                            <div class="slider-two__carousel-content">
+                                <h3>Senior Nursing Care <br> & Elder Care</h3>
+                                <p>Yeteda services understands you may need help with certain activities and a friend along the way. We recognize that feeling lonely is one of the leading causes of depression in seniors and our goal is to reverse the effects of isolation with companion home care.</p>
+                            </div><!-- /.slider-two__carousel-content -->
+                        </div><!-- /.slider-two__carousel-single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="slider-two__carousel-single">
+                            <img src="{{ asset('images/main-slider/main-slider-2-2.jpg') }}" alt="">
+                            <div class="slider-two__carousel-content">
+                                <h3>Live-In Care</h3>
+                                <p>Our wonderful caregivers live right in your home and become an integral part of the family. </p>
+                            </div><!-- /.slider-two__carousel-content -->
 
-    <!-- favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}">
-    <link rel="manifest" href="{{ asset('images/favicon/site.webmanifest') }}">
+                        </div><!-- /.slider-two__carousel-single -->
+                    </div><!-- /.item -->
+                    <div class="item">
+                        <div class="slider-two__carousel-single">
+                            <img src="{{ asset('images/main-slider/main-slider-2-3.jpg') }}" alt="">
+                            <div class="slider-two__carousel-content">
+                                <h3>Personal Care</h3>
+                                <p>Our home Caregivers are trained and experienced with the wide variety of personal care needs, whether it is assistance with bathing, using the washroom or incontinence issues.  </p>
+                            </div><!-- /.slider-two__carousel-content -->
+                        </div><!-- /.slider-two__carousel-single -->
+                    </div><!-- /.item -->
+                </div><!-- /.slider-two__carousel owl-carousel thm__owl-carousel owl-theme -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</section><!-- /.slider-two__wrapper -->
 
-    <!-- plugins styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baloo+2:400,500,600,700,800%7CLato:100,300,400,700,900%7COpen+Sans:300,400,600,700,800%7CRoboto:300,400,500,700,900%7CRubik:300,400,500,700,900&display=swap">
-    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-datepicker.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap-select.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/hover-min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/swiper.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/oberlin-icons.css') }}">
 
-    <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
 
-</head>
+<section class="about-one about-one__home-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-one__home-two__image">
+                    <img src="{{ asset('images/shapes/about-1-dot-1.png') }}" class="about-one__home-two__image-dot"
+                        alt="">
+                    <img src="{{ asset('images/resources/about-1-3.jpg') }}" class="img-fluid" alt="">
+                </div><!-- /.about-one__home-two__image -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6 d-flex">
+                <div class="my-auto">
+                    <div class="about-one__content">
+                        <div class="block-title text-left">
+                            <p class="has-line">02. About Us</p>
+                        </div><!-- /.block-title -->
+                        <p>Yeteda Services prides itself in the provision of exceptional care services for personal homes and care facilities
+Our processes ensure that we hire the most experienced, qualified, passionate, and compassionate healthcare professionals to meet the unique needs of each personal home or care facility.</p>
+                        <div class="nav navtabs about-one__tab-title">
+                            <a href="#approach" class="nav-link active" data-toggle="tab">Vision</a>
+                            <!-- /.nav-link -->
+                            <a href="#mission" class="nav-link" data-toggle="tab">Mission</a><!-- /.nav-link -->
+                            <a href="#target" class="nav-link" data-toggle="tab">Shared Values</a><!-- /.nav-link -->
+                        </div><!-- /.nav navtabs about-one__tab-title -->
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active animated fadeInUp" id="approach">
+                                <p>To be the healthcare personnel provider of first choice in North America</p>
+                              
+                            </div><!-- /.tab-pane fade show active animated fadeInUp -->
 
-<body>
+                            <div class="tab-pane fade  animated fadeInUp" id="mission">
+                                <p>To always provide high quality, professional and licensed healthcare personnel to personal homes and care facilities in line with budget, scope and timeline</p>
+                               
+                            </div><!-- /.tab-pane fade  animated fadeInUp -->
+                            <div class="tab-pane fade animated fadeInUp" id="target">
+                                <p>
+                                 <ul class="blog-details__list list-unstyled">
+                                        
+<li><i class="fa fa-check-circle"></i><strong>Customer centricity</strong>:</li>You are the reason for our existence, and we put you at the center of everything – Our world literally revolves around you!<br>
+<li><i class="fa fa-check-circle"></i><strong>Dynamism</strong>:</li>We understand that every customer is unique. This uniqueness brings about different types of needs. We easily spot nuances between the most similar customers and react to them <br>
+<li><i class="fa fa-check-circle"></i><strong>Speed</strong>:</li>Due to the nature of your business, we understand that your needs are time sensitive. Consequently, we have built the most efficient system to ensure that we can quickly react to your needs<br>
+<li><i class="fa fa-check-circle"></i><strong>Empathy</strong>:</li> We put ourselves in your shoes with every action that we take
+</p>
+</ul>
+                             
+                            </div><!-- /.tab-pane fade animated fadeInUp -->
+                        </div><!-- /.tab-content -->
+                    </div><!-- /.about-one__content -->
+                </div><!-- /.my-auto -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.about-one -->
 
-    
+<section class="cta-two">
+    <img src="{{ asset('images/shapes/cta-1-1-shape-1.png') }}" class="cta-two__dot-1" alt="">
+    <img src="{{ asset('images/shapes/cta-1-1-shape-2.png') }}" class="cta-two__dot-2" alt="">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center wow fadeInLeft"
+                data-wow-duration="1500ms">
+                <div class="cta-two__image">
+                    <img src="{{ asset('images/resources/cta-1-1.jpg') }}" alt="">
+                    <div class="cta-two__image-inner">
+                        <div class="cta-two__image-content">
+                            <h3><span class="counter">100</span><!-- /.coutner -->%</h3>
+                            <p>Success Rate</p>
+                        </div><!-- /.cta-two__image-content -->
+                    </div><!-- /.cta-two__image-inner -->
+                </div><!-- /.cta-two__image -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="cta-two__content">
+                    <h3>Book a <br> Service Today!</h3>
+                    <p>Please feel free to book any of our services.  If you want to find more information about our services, please browse our website.  We have a lot of useful and insightful information. </p>
+                    <a href="contact.html" class="thm-btn cta-two__btn">Book Service</a><!-- /.thm-btn cta-two__btn -->
+                </div><!-- /.cta-two__content -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row no-gutters -->
+    </div><!-- /.container -->
+</section><!-- /.cta-two -->
 
-    <div class="page-wrapper">
-       <nav class="main-nav-one main-nav-one__home-two stricky">
-            <div class="container-fluid">
-                <div class="inner-container">
-                    <div class="logo-box">
-                        <a href="/index.html">
-                            <img src="{{ asset('images/dark-logo-1-1.png') }}" alt="" width="300">
-                        </a>
-                        <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
-                    </div><!-- /.logo-box -->
-                    <div class="main-nav__main-navigation">
-                        <ul class="main-nav__navigation-box">
-                            <li><a href="https://yetedaservices.com/">Home</a> </li>
-                          
-                            <li> <a href="https://yetedaservices.com/services.html">Services</a> </li>
+<section class="living-option-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="living-option-two__main">
+                    <div class="block-title text-left">
+                        <p class="has-line">03. Services</p><!-- /.has-line -->
+                        <h3>Would you rather stay at home than go into a health care facility or nursing home?</h3>
+                    </div><!-- /.block-title text-left -->
+                    <p>Yeteda services will provide the following home health care programs at flexible schedules and cost-friendly service rates.</p>
+                    <div class="nav navtabs living-option-two__tab-title">
+                        <a href="#live" data-toggle="tab" class="nav-link">Live-In Care</a>
+                        <!-- /.nav-link -->
+                        <a href="#personal" data-toggle="tab" class="nav-link active">Personal Care</a>
+                        <!-- /.nav-link -->
+                        <a href="#dementia" data-toggle="tab" class="nav-link">Dementia Care</a>
+                        <!-- /.nav-link -->
+                        <a href="#respite" data-toggle="tab" class="nav-link">Respite Care</a>
+                        <!-- /.nav-link -->
+                        <a href="#veteran" data-toggle="tab" class="nav-link">Veteran Care</a>
+                        <!-- /.nav-link -->
+                    </div><!-- /.nav navtabs living-option-two__tab-title -->
+                </div><!-- /.living-option-two__main -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="tab-content">
+                    <div class="tab-pane fade  animated fadeInRight" id="live">
+                        <div class="about-two__image">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-1.png') }}"
+                                class="about-two__image-dot-1" alt="">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-2.png') }}"
+                                class="about-two__image-dot-2" alt="">
+                            <img src="{{ asset('images/resources/living-option-2-2.jpg') }}" alt="">
+                            <div class="about-two__image-content">
+                                <h3>Live-In Care</h3>
+                                <p>If you’re looking for a comprehensive, cost effective alternative to any type of facility, Yeteda services is the choice for you.</p>
+                                
+                                <!-- /.thm-btn living-option-two__btn -->
+                            </div><!-- /.about-two__image-content -->
+                        </div><!-- /.about-two__image -->
+                    </div><!-- /.tab-pane fade show animated fadeInRight -->
 
-                            <li class="current"><a href="https://yetedaservices.com/review">Reviews</a></li>
+                    <div class="tab-pane fade show active animated fadeInRight" id="personal">
+                        <div class="about-two__image">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-1.png') }}"
+                                class="about-two__image-dot-1" alt="">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-2.png') }}"
+                                class="about-two__image-dot-2" alt="">
+                            <img src="{{ asset('images/resources/living-option-2-1.jpg') }}" alt="">
+                            <div class="about-two__image-content">
+                                <h3>Personal Care</h3>
+                                <p>With our in-home care services, we provide a customized regimen of care that focuses on individual needs and personal environments.</p>
+                           
+                                <!-- /.thm-btn living-option-two__btn -->
+                            </div><!-- /.about-two__image-content -->
+                        </div><!-- /.about-two__image -->
+                    </div><!-- /.tab-pane fade show animated fadeInRight -->
+                    <div class="tab-pane fade  animated fadeInRight" id="dementia">
+                        <div class="about-two__image">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-1.png') }}"
+                                class="about-two__image-dot-1" alt="">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-2.png') }}"
+                                class="about-two__image-dot-2" alt="">
+                            <img src="{{ asset('images/resources/living-option-2-3.jpg') }}" alt="">
+                            <div class="about-two__image-content">
+                                <h3>Dementia Care</h3>
+                                <p>Our memory care program provides the highest quality care for residents living with memory loss.</p>
+                               
+                                <!-- /.thm-btn living-option-two__btn -->
+                            </div><!-- /.about-two__image-content -->
+                        </div><!-- /.about-two__image -->
+                    </div><!-- /.tab-pane fade show animated fadeInRight -->
+                    <div class="tab-pane fade  animated fadeInRight" id="respite">
+                        <div class="about-two__image">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-1.png') }}"
+                                class="about-two__image-dot-1" alt="">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-2.png') }}"
+                                class="about-two__image-dot-2" alt="">
+                            <img src="{{ asset('images/resources/living-option-2-4.jpg') }}" alt="">
+                            <div class="about-two__image-content">
+                                <h3>Respite Care</h3>
+                                <p>With 24/7, around-the-clock care, a caregiver is always watching over your loved one, offering emotional support, reducing fall risk and assisting in all activities of daily living.</p>
+                                
+                                <!-- /.thm-btn living-option-two__btn -->
+                            </div><!-- /.about-two__image-content -->
+                        </div><!-- /.about-two__image -->
+                    </div><!-- /.tab-pane fade show animated fadeInRight -->
+                    <div class="tab-pane fade  animated fadeInRight" id="veteran">
+                        <div class="about-two__image">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-1.png') }}"
+                                class="about-two__image-dot-1" alt="">
+                            <img src="{{ asset('images/shapes/living-option-dot-2-2.png') }}"
+                                class="about-two__image-dot-2" alt="">
+                            <img src="{{ asset('images/resources/living-option-2-5.jpg') }}" alt="">
+                            <div class="about-two__image-content">
+                                <h3>Veteran Care</h3>
+                                <p>At Yeteda services, we provide the highest quality of long term care for our Veterans, their families and the community.</p>
+                              
+                                <!-- /.thm-btn living-option-two__btn -->
+                            </div><!-- /.about-two__image-content -->
+                        </div><!-- /.about-two__image -->
+                    </div><!-- /.tab-pane fade show animated fadeInRight -->
+                </div><!-- /.tab-content -->
 
-                            <li><a href="https://yetedaservices.com/contact.html">Contact</a></li>
-                        </ul><!-- /.main-nav__navigation-box -->
-                    </div><!-- /.main-nav__main-navigation -->
-                    <div class="main-nav__right">
-                        <div class="main-nav__social">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div><!-- /.main-nav__social -->
-                        <a href="tel:437-263-0151" class="main-nav-one__cta">
-                            <i class="oberlin-icon-phone"></i>
-                            <span>Say Hello </span>
-                            <b>437-263-0151</b>
-                        </a><!-- /.main-nav-one__cta -->
-                    </div><!-- /.main-nav__right -->
-                </div><!-- /.inner-container -->
-            </div><!-- /.container -->
-        </nav><!-- /.main-nav-one -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.living-option-two -->
 
-        <section class="page-header" style="background-image: url({{ asset('images/background/page-header-bg-1-1.jpg') }});">
-            <div class="container">
-                <h2>Customer Reviews</h2>
-                <ul class="list-unstyled thm-breadcrumb">
-                    <li><a href="https://yetedaservices.com/">Home</a></li>
-                    <li><span>Reviews</span></li>
-                </ul><!-- /.list-unstyled -->
-            </div>
-            <!-- /.container -->
-        </section><!-- /.page-header -->
+  <section class="faq-two">
+    <div class="faq-two__image wow fadeInRight" data-wow-duration="1500ms">
+        <img src="{{ asset('images/resources/faq-1-1.png') }}" alt="">
+    </div><!-- /.faq-two__image -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="faq-one__block">
+                    <div class="block-title text-left">
+                        <p class="has-line">04. Why Choose US</p>
+                        <h3>Why Most People <br> Choose Yeteda Services</h3>
+                    </div><!-- /.block-title -->
 
-        <section class="contact-info-one">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        @foreach ($reviews as $review)
-                            <div class="card shadow mb-3" style="border-left:3px solid #4CB7FF">
-                                <div class="card-body">
-                                    <em class="small">{{ $review->created_at }}</em>
-                                    <p>{{ $review->comment }}</p>
-                                    <div class="text-right">
-                                        <div class="rating text-warning">{{ $review->rating }}</div>
-                                        <div class="small">{{ strtoupper($review->name) }}</div>
-                                    </div>
-                                </div>
+                   
+                    <div class="accrodion-grp" data-grp-name="career-one__accrodion">
+                        <div class="accrodion ">
+                            <div class="accrodion-title">
+                                <h4>On call 24/7 availability for client needs</h4>
                             </div>
-                        @endforeach
-                        <div class="row justify-content-center my-4 pt-4">
-                            {{ $reviews->links() }}
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Around-the-clock care allows your loved one to remain in his or her home with you, while ensuring safety and promoting optimal well-being.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion active">
+                            <div class="accrodion-title">
+                                <h4>Flexible, fast and friendly scheduling</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p> We offer a much more personalized plan of care with one-to-one support tailored to the status, conditions, preferences, hobbies and lifestyle of the individual client.</p>
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>State certified and experienced care team staff</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Place holder text for the subject above. Thanks</p>
+                                </div><!-- /.inner -->
+                            </div>
                         </div>
                     </div>
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section><!-- /.contact-info-one -->
+                </div><!-- /.faq-one__block -->
 
-        <section class="contact-one" id="reviewFormSection">
-            <div class="container">
-                <div class="block-title text-center">
-                    <p>Write a Review</p>
-                    <h3>Share your experience with us</h3>
-                </div><!-- /.block-title -->
-                @if (count($errors))
-                    <div class="alert alert-danger mb-2">
-                        <strong>Whoops!</strong> Error validating data.<br>
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-                @if (session('success'))
-                    <div class="alert alert-success"><strong>Success!</strong> {{ session('success') }}</div>
-                @endif
-                <form action="{{ route('review.new') }}" method="POST" class="contact-one__form">
-                    @csrf
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" placeholder="Full Name" name="name" value="{{ old('name') }}">
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-6">
-                            <input type="email" placeholder="Email Address" name="email" value="{{ old('email') }}">
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-12" style="padding: 0px 30px;">
-                            <div class="row bg-white mb-4 p-3" style="border-radius: 50px;">
-                                <div class="col-auto">Star Rating</div>
-                                <div class="col">
-                                    <input type="number" name="rating" id="rating1" class="rating text-warning" data-clearable="remove">
-                                </div>
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.faq-two -->
+
+
+
+
+<section class="career-one career-one__home-two">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="career-one__block">
+                    <div class="block-title">
+                        <p class="has-line">05. FAQ</p>
+                        <h3>Freequently Asked <br> Questions</h3>
+                    </div><!-- /.block-title -->
+                    <p>Providing the absolute best care to our clients is paramount. We only want to work with and nurture the very best caregivers, whether they are companions, personal support workers or nurses. We allow all of our caregivers a choice of the clients that they would like to help. </p>
+                    <p>Do not hesitate to ask us any quetions and we will reply as soon as possible. <a href="contact.html" target="_parent">Click here</a></p>
+                </div><!-- /.career-one__block -->
+            </div><!-- /.col-lg-6 -->
+            <div class="col-lg-6">
+                <div class="career-one__content">
+                    <div class="accrodion-grp" data-grp-name="career-one__accrodion">
+                        <div class="accrodion ">
+                            <div class="accrodion-title">
+                                <h4>Does having home care result in loss of independence?</h4>
                             </div>
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-12">
-                            <textarea name="comment" placeholder="Comment"></textarea>
-                        </div><!-- /.col-md-12 -->
-                        <div class="col-md-12 text-center">
-                            <button type="submit" class="thm-btn contact-one__btn">Submit Review</button>
-                            <!-- /.thm-btn contact-one__btn -->
-                        </div><!-- /.col-md-12 -->
-                    </div><!-- /.row -->
-					
-                </form>
-                <div class="result"></div><!-- /.result -->
-            </div>
-            <!-- /.container -->
-        </section><!-- /.contact-one -->
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>No. Our belief is that independence is being in control of your decisions. Having in home care services means being in control of your activities and retaining as much independence as each situation allows. Many of our clients just need a little help to continue living a safe and productive life while some might be recovering from a fall or surgery, or other condition. Regardless of your situation, our goal is to enable you the best possible outcome while being in control of your care and daily decisions.</p>
+                                   
+                                    </ul><!-- /.list-unstyled career-one__content-list -->
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion active">
+                            <div class="accrodion-title">
+                                <h4>How can i trust a caregiver in my home?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>Just like nurses and doctors, Professional Caregivers have chosen a career in compassionate care of those in need. Before starting their journey with Yeteda Serices, each caregiver has to go through tough screening including comprehensive background check , license check and drug screening. We do all this check using top government approved provider. We rarely advertise for caregivers as most come from word of mouth referral from other happy clients.</p>
+                                
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>Do you offer long term contract?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>You can use our services only as long as you’re 100% satisfied.</p>
+                                    
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                        <div class="accrodion">
+                            <div class="accrodion-title">
+                                <h4>What is the process of finding a caregiver?</h4>
+                            </div>
+                            <div class="accrodion-content">
+                                <div class="inner">
+                                    <p>We make the process of finding a caregiver very simple and prompt using our Placement program. Give us a call and we’ll conduct a brief phone discussion to understand your needs. We then can meet anyone involved in selecting and paying for care at your home for an in-home needs consultation. Within 24 hours of that visit we are usually able to refer a professional caregiver to your home. Our team continuously screens caregivers beyond current demand to give you quick access to the best caregivers in our community.</p>
+                                   
+                                </div><!-- /.inner -->
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.career-one__content -->
+            </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.career-one -->
 
-       <footer class="site-footer">
-         
-			
-            
-            <div class="site-footer__bottom">
-                <div class="container">
-                    <p>Yeteda Services <i class="far fa-copyright"></i> 2022 All Right Reserved</p>
-                    <ul class="list-unstyled site-footer__menu">
-					<li><a href="#">Privacy Policy</a></li>
-                        <li>Site by <a href="https://wmatechjunkies.com/" target="_blank">WMA Tech Junkies</a></li>
+
+
+
+
+ <section class="contact-two">
+    <img src="{{ asset('images/shapes/contact-2-map-1-1.png') }}" class="contact-two__map-1" alt="">
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-xl-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.2556574183986!2d-79.88223908420015!3d43.497001979127006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b6f80d3578fbb%3A0x394dc18e6c9b6b1!2s153%20Farrington%20Crossing%2C%20Milton%2C%20ON%20L9T%200S8%2C%20Canada!5e0!3m2!1sen!2sng!4v1661794430111!5m2!1sen!2sng"
+                    class="google-map__home-five" allowfullscreen></iframe>
+            </div><!-- /.col-xl-6 -->
+            <div class="col-xl-6 d-flex">
+                <div class="my-auto">
+                    <div class="contact-two__content">
+                        <div class="block-title">
+                            <p class="has-line">06. Inquiry</p><!-- /.has-line -->
+                            <h3>Want to Know More About <br> Yeteda Services?</h3>
+                        </div><!-- /.block-title -->
+                        <form action="{{ asset('inc/sendemail.php') }}"
+                            class="contact-one__form contact-form-validated">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Full Name" name="name">
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Email Address" name="email">
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Phone Number" name="phone">
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-6">
+                                    <select name="discussion" class="selectpicker">
+                                        <option value="Discussion For">Discussion For</option>
+                                        <option value="General Inquiry">General Inquiry</option>
+                                        <option value="Services Inquiry">Services Inquiry</option>
+                                    </select><!-- /.selectpicker -->
+                                </div><!-- /.col-md-6 -->
+                                <div class="col-md-12">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                </div><!-- /.col-md-12 -->
+                                <div class="col-md-12 text-left">
+                                    <button type="submit" class="thm-btn contact-one__btn">Submit Now</button>
+                                    <!-- /.thm-btn contact-one__btn -->
+                                </div><!-- /.col-md-12 -->
+                            </div><!-- /.row -->
+                        </form>
                         
-                    </ul><!-- /.site-footer__menu -->
-                </div><!-- /.container -->
-            </div><!-- /.site-footer__bottom -->
-        </footer><!-- /.site-footer -->
-        </footer><!-- /.site-footer -->
 
+                    </div><!-- /.contact-two__content -->
 
-    </div><!-- /.page-wrapper -->
+                </div><!-- /.my-auto -->
+            </div><!-- /.col-xl-6 -->
+        </div><!-- /.row no-gutters -->
+    </div><!-- /.container-fluid -->
+    <div class="result"></div><!-- /.result -->
+</section><!-- /.contact-two -->
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
-
-    <div class="side-menu__block">
-
-        <a href="#" class="side-menu__toggler side-menu__close-btn"><i class="fa fa-times"></i>
-            <!-- /.fa fa-close --></a>
-
-        <div class="side-menu__block-overlay custom-cursor__overlay">
-            <div class="cursor"></div>
-            <div class="cursor-follower"></div>
-        </div><!-- /.side-menu__block-overlay -->
-        <div class="side-menu__block-inner ">
-
-            <a href="index.html" class="side-menu__logo"><img src="{{ asset('images/light-logo-1-1.png') }}" alt=""
-                    width="190"></a>
-            <nav class="mobile-nav__container">
-                <!-- content is loading via js -->
-            </nav>
-           <p class="side-menu__block__copy">(c) 2022 <a href="#">Yeteda Services</a> - All rights reserved. | Site by <a href="https://wmatechjunkies.com/" target="_blank">WMA Tech Junkies</a></p>
-            <div class="side-menu__social">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div><!-- /.side-menu__block-inner -->
-    </div><!-- /.side-menu__block -->
-
-    <!-- template scripts -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-datepicker.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('js/isotope.js') }}"></script>
-    <script src="{{ asset('js/jquery.ajaxchimp.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.circleType.js') }}"></script>
-    <script src="{{ asset('js/waypoints.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.lettering.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script src="{{ asset('js/jquery.validate.min.js') }}"></script>
-    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('js/TweenMax.min.js') }}"></script>
-    <script src="{{ asset('js/wow.min.js') }}"></script>
-    <script src="{{ asset('js/theme.js') }}"></script>
-    <script src="{{ asset('js/bootstrap4-rating-input.min.js') }}"></script>
-    <script src="https://use.fontawesome.com/5ac93d4ca8.js"></script>
-</body>
-
-</html>
+@endsection

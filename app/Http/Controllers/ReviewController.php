@@ -18,7 +18,7 @@ class ReviewController extends Controller
             'rating' => ['required', 'integer'],
             'comment' => ['required', 'max:500'],
         ]);
-        $redirectUrl = route('home').'#reviewFormSection';
+        $redirectUrl = route('reviews').'#reviewFormSection';
         DB::beginTransaction();
         try {
             Review::create($request->except('_token'));

@@ -9,8 +9,23 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $reviews = Review::where('status', false)->paginate(10);
-        return view('home', compact('reviews'));
+        return view('home');
+    }
+
+    public function services()
+    {
+        return view('services');
+    }
+
+    public function reviews()
+    {
+        $reviews = Review::where('status', true)->paginate(10);
+        return view('reviews', compact('reviews'));
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 
     public function admin()

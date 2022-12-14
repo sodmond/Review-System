@@ -20,7 +20,10 @@ use App\Http\Controllers\Admin;
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::post('/new-review', [ReviewController::class, 'new'])->name('review.new');
+Route::get('services', [HomeController::class, 'services'])->name('services');
+Route::get('reviews', [HomeController::class, 'reviews'])->name('reviews');
+Route::post('new-review', [ReviewController::class, 'new'])->name('review.new');
+Route::get('contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/admin', [HomeController::class, 'admin']);
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.',  'middleware' => 'auth'], function ()
