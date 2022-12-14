@@ -53,7 +53,7 @@
                           
                             <li> <a href="/services.html">Services</a> </li>
 
-                            <li><a href="{{ route('home') }}">Reviews</a></li>
+                            <li class="current"><a href="{{ route('home') }}">Reviews</a></li>
 
                             <li><a href="/contact.html">Contact</a></li>
                         </ul><!-- /.main-nav__navigation-box -->
