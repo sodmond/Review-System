@@ -42,7 +42,7 @@
             <div class="container-fluid">
                 <div class="inner-container">
                     <div class="logo-box">
-                        <a href="index.html">
+                        <a href="/index.html">
                             <img src="{{ asset('images/dark-logo-1-1.png') }}" alt="" width="300">
                         </a>
                         <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
