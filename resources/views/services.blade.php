@@ -6,7 +6,7 @@ style="background-image: url({{ asset('images/background/page-header-living-1.jp
 <div class="container">
     <h2>Our Services</h2>
     <ul class="list-unstyled thm-breadcrumb">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="{{ url('/') }}">Home</a></li>
         <li><span>Services</span></li>
     </ul><!-- /.list-unstyled -->
 </div><!-- /.container -->

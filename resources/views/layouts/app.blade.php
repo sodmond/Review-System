@@ -40,7 +40,7 @@
             <div class="container-fluid">
                 <div class="inner-container">
                     <div class="logo-box">
-                        <a href="/index.html">
+                        <a href="{{ url('/') }}">
                             <img src="{{ asset('images/dark-logo-1-1.png') }}" alt="" width="300">
                         </a>
                         <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
@@ -102,7 +102,7 @@
         </div><!-- /.side-menu__block-overlay -->
         <div class="side-menu__block-inner ">
 
-            <a href="index.html" class="side-menu__logo"><img src="{{ asset('images/light-logo-1-1.png') }}" alt=""
+            <a href="{{ url('/') }}" class="side-menu__logo"><img src="{{ asset('images/light-logo-1-1.png') }}" alt=""
                     width="190"></a>
             <nav class="mobile-nav__container">
                 <!-- content is loading via js -->

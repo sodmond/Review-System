@@ -9,7 +9,7 @@
                     <div class="slider-two__main">
                         <h3>You're in good hands with our professional team.</h3>
                         <p>We provide peace of mind when caring for you and your loved one. If you or a loved one needs a little help at your home with elderly care, personal care etc. turn to us. We offer innovative services by highly trained caregivers you can trust for personal care needs, post-op needs, and seniors who wish to remain in the comfort of their own homes.</p>
-                        <a href="services.html" class="thm-btn slider-two__btn">View Services</a>
+                        <a href="{{ route('services') }}" class="thm-btn slider-two__btn">View Services</a>
                         <!-- /.thm-btn slider-two__btn -->
                         <ul id="slider-two__carousel-dots" class="list-unstyled owl-dots">
                             <li class="owl-dot"></li>
@@ -135,7 +135,7 @@ Our processes ensure that we hire the most experienced, qualified, passionate, a
                 <div class="cta-two__content">
                     <h3>Book a <br> Service Today!</h3>
                     <p>Please feel free to book any of our services.  If you want to find more information about our services, please browse our website.  We have a lot of useful and insightful information. </p>
-                    <a href="contact.html" class="thm-btn cta-two__btn">Book Service</a><!-- /.thm-btn cta-two__btn -->
+                    <a href="{{ route('contact') }}" class="thm-btn cta-two__btn">Book Service</a><!-- /.thm-btn cta-two__btn -->
                 </div><!-- /.cta-two__content -->
             </div><!-- /.col-lg-6 -->
         </div><!-- /.row no-gutters -->
@@ -317,7 +317,7 @@ Our processes ensure that we hire the most experienced, qualified, passionate, a
                         <h3>Freequently Asked <br> Questions</h3>
                     </div><!-- /.block-title -->
                     <p>Providing the absolute best care to our clients is paramount. We only want to work with and nurture the very best caregivers, whether they are companions, personal support workers or nurses. We allow all of our caregivers a choice of the clients that they would like to help. </p>
-                    <p>Do not hesitate to ask us any quetions and we will reply as soon as possible. <a href="contact.html" target="_parent">Click here</a></p>
+                    <p>Do not hesitate to ask us any quetions and we will reply as soon as possible. <a href="{{ route('contact') }}" target="_parent">Click here</a></p>
                 </div><!-- /.career-one__block -->
             </div><!-- /.col-lg-6 -->
             <div class="col-lg-6">
