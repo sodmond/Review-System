@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $reviews = Review::paginate(10);
+        $reviews = Review::where('status', false)->paginate(10);
         return view('home', compact('reviews'));
     }
 
