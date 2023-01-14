@@ -34,7 +34,7 @@
                         <i class="oberlin-icon-phone"></i>
                     </div><!-- /.contact-info-one__icon -->
                     <h3>Phone Number</h3>
-                    <p><a href="tel:647-992-9080">647-992-9080</a> <br> <a
+                    <p><a href="tel:+14372630151">+1 (437) 263-0151</a> <br> <a
                             href=""></a></p>
                 </div><!-- /.contact-info-one__single -->
             </div><!-- /.col-lg-4 -->

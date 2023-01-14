@@ -61,10 +61,10 @@
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                         </div><!-- /.main-nav__social -->
-                        <a href="tel:437-263-0151" class="main-nav-one__cta">
+                        <a href="tel:+14372630151" class="main-nav-one__cta">
                             <i class="oberlin-icon-phone"></i>
                             <span>Say Hello </span>
-                            <b>437-263-0151</b>
+                            <b>+1 (437) 263-0151</b>
                         </a><!-- /.main-nav-one__cta -->
                     </div><!-- /.main-nav__right -->
                 </div><!-- /.inner-container -->
