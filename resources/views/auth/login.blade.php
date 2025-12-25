@@ -8,7 +8,7 @@
 
                 <div class="card-body p-0">
                     <div class="row">
-                        <div class="col-lg-6 d-none d-lg-block" style="background:url('https://source.unsplash.com/ignxm3E1Rg4/600x800'); 
+                        <div class="col-lg-6 d-none d-lg-block" style="background:url('{{ asset('images/login-bg.jpg') }}'); 
                             background-position:center; background-size: cover;"></div>
                         <div class="col-lg-6">
                             <div class="p-5">
